@@ -12,11 +12,15 @@ main{max-width:720px;margin:0 auto;padding:56px 24px 80px}
 .brand{color:var(--pink);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;text-decoration:none}
 h1{font-size:34px;line-height:1.2;margin:18px 0 4px}
 .stroke{display:block;width:180px;height:12px;margin-bottom:28px}
-h2{color:var(--pink);font-size:19px;margin:40px 0 8px}
-p,li{color:var(--text)}
-.muted{color:var(--muted);font-size:14px}
-ul{padding-left:20px}
-li{margin:6px 0}
+.card{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin:12px 0}
+.card.lead{background:rgba(255,255,255,.05);border-radius:18px;padding:20px 22px}
+.card h2{color:var(--pink);font-size:17px;margin:0 0 6px}
+.card p{margin:8px 0 0;color:var(--muted)}
+.card h2+p{margin-top:0}
+.card.lead p{color:var(--text)}
+.card ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.card li{margin:4px 0}
+.muted{color:var(--muted);font-size:14px;margin:0 0 16px}
 a{color:var(--pink);text-underline-offset:3px}
 strong{color:#fff}
 footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
@@ -29,17 +33,19 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <svg class="stroke" viewBox="0 0 180 12" aria-hidden="true"><path d="M2 8 C50 1 130 1 178 5 C130 6 50 7 2 8 Z" fill="#FF6EB4"/></svg>
 <p class="muted">Effective date: December 15, 2026</p>
 
+<div class="card lead">
 <p>Minilab ("the app") is made by an independent developer, the Minilab developer ("I", "me"). This policy explains what happens to your information when you use the app.</p>
+</div>
 
-<h2>Your photos stay on your iPhone</h2>
+<div class="card"><h2>Your photos stay on your iPhone</h2>
 <p>Minilab enhances photos and removes objects using AI models that run entirely on your device. Your photos are never uploaded to me or to anyone else. I do not have servers that receive your photos, and I cannot see them.</p>
-<p>The app asks for access to your photo library only to open the photos you choose and to save the edited results. You can change this at any time in iOS Settings.</p>
+<p>The app asks for access to your photo library only to open the photos you choose and to save the edited results. You can change this at any time in iOS Settings.</p></div>
 
-<h2>Information I collect</h2>
+<div class="card"><h2>Information I collect</h2>
 <p>None. Minilab has no accounts, no sign-in and no analytics of its own. I do not collect, store or sell your personal information.</p>
-<p>If you choose to share crash reports with app developers in iOS Settings, Apple may send me anonymous crash and performance reports. They do not include your photos.</p>
+<p>If you choose to share crash reports with app developers in iOS Settings, Apple may send me anonymous crash and performance reports. They do not include your photos.</p></div>
 
-<h2>Advertising</h2>
+<div class="card"><h2>Advertising</h2>
 <p>Minilab is free and is paid for by ads. Ads are provided by AppLovin and, through AppLovin, by Google and other advertising partners. To show and measure ads, these companies may collect information such as:</p>
 <ul>
 <li>device and app information (model, iOS version, language, app version)</li>
@@ -47,33 +53,29 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);color:v
 <li>ad interactions (which ads were shown or tapped)</li>
 <li>your device's advertising identifier, only if you allow tracking when iOS asks</li>
 </ul>
-<p>These companies handle this information under their own privacy policies:</p>
-<ul>
-<li><a href="https://www.applovin.com/privacy/">AppLovin Privacy Policy</a></li>
-<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-</ul>
+<p>These companies handle this information under their own privacy policies: <a href="https://www.applovin.com/privacy/">AppLovin Privacy Policy</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p></div>
 
-<h2>Your choices</h2>
+<div class="card"><h2>Your choices</h2>
 <ul>
 <li><strong>Tracking:</strong> iOS asks whether Minilab may track you. If you choose "Ask App Not to Track", your advertising identifier is not shared and you still get ads, just less personalised. You can change this in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
 <li><strong>EEA, UK and Switzerland:</strong> you are asked for consent before personalised ads are shown. You can change your choice at any time in the app under Settings &gt; Privacy choices.</li>
 <li><strong>US state privacy laws:</strong> I do not sell personal information. To opt out of personalised ads, use the tracking setting above.</li>
-</ul>
+</ul></div>
 
-<h2>Downloads from Apple</h2>
-<p>On supported iPhones, the "Improve quality" feature downloads an extra AI model once, from Apple's servers. This download is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> and contains no information about your photos.</p>
+<div class="card"><h2>Downloads from Apple</h2>
+<p>On supported iPhones, the "Improve quality" feature downloads an extra AI model once, from Apple's servers. This download is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> and contains no information about your photos.</p></div>
 
-<h2>Children</h2>
-<p>Minilab is not directed at children under 13 (or under 16 in the EEA and UK), and I do not knowingly collect information from them.</p>
+<div class="card"><h2>Children</h2>
+<p>Minilab is not directed at children under 13 (or under 16 in the EEA and UK), and I do not knowingly collect information from them.</p></div>
 
-<h2>Your rights</h2>
-<p>Because I do not hold personal information about you, there is nothing for me to access, correct or delete. For information collected by advertising partners, contact them through the links above. You can also email me and I will help where I can.</p>
+<div class="card"><h2>Your rights</h2>
+<p>Because I do not hold personal information about you, there is nothing for me to access, correct or delete. For information collected by advertising partners, contact them through the links above. You can also email me and I will help where I can.</p></div>
 
-<h2>Changes</h2>
-<p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+<div class="card"><h2>Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new effective date.</p></div>
 
-<h2>Contact</h2>
-<p>The Minilab developer: <a href="mailto:support.minilab@gmail.com">support.minilab@gmail.com</a></p>
+<div class="card"><h2>Contact</h2>
+<p>The Minilab developer: <a href="mailto:support.minilab@gmail.com">support.minilab@gmail.com</a></p></div>
 
 <footer>Minilab · <a href="../support/">Support</a></footer>
 </main>
