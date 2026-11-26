@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Minilab — AI Photo Enhancer &amp; Eraser for iPhone</title>
+<title>Minilab — AI Photo Enhancer &amp; Eraser</title>
 <meta name="description" content="Fix blurry faces, sharpen old photos and remove unwanted objects. Free, on-device, no account.">
 <style>
 :root{--pink:#FF6EB4;--text:#E9ECF8;--muted:#AEB6DA;--line:rgba(255,110,180,.28)}
@@ -15,7 +15,8 @@ h1{font-size:clamp(40px,8vw,64px);line-height:1.05;margin:12px 0 6px}
 .stroke{display:block;width:220px;height:14px;margin-bottom:22px}
 .lead{font-size:19px;color:var(--text);max-width:560px;margin:0 0 18px}
 .soon{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:8px 16px;color:var(--pink);font-weight:600;font-size:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:48px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:48px}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}}
 .card{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
 .card h2{color:var(--pink);font-size:17px;margin:0 0 6px}
 .card p{margin:0;color:var(--muted)}
@@ -25,16 +26,16 @@ footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:v
 </head>
 <body>
 <main>
-<div class="eyebrow">For iPhone</div>
+<div class="eyebrow">AI photo lab</div>
 <h1>Minilab</h1>
 <svg class="stroke" viewBox="0 0 220 14" aria-hidden="true"><path d="M2 9 C60 1 160 1 218 6 C160 7 60 8 2 9 Z" fill="#FF6EB4"/></svg>
-<p class="lead">A little photo lab in your pocket. Bring blurry faces back into focus, sharpen old photos and erase what you don't want, all on your iPhone.</p>
-<span class="soon">Coming soon to the App Store</span>
+<p class="lead">A little photo lab in your pocket. Bring blurry faces back into focus, sharpen old photos and erase what you don't want, all on your own device.</p>
+<span class="soon">Coming soon</span>
 
 <div class="grid">
 <div class="card"><h2>Enhance</h2><p>Restores blurry and low-resolution faces and sharpens the whole photo, without changing colours or adding a fake look.</p></div>
 <div class="card"><h2>Erase</h2><p>Tap a person or object and it's gone in seconds, with the background filled in naturally.</p></div>
-<div class="card"><h2>Private by design</h2><p>Everything runs on your iPhone. Your photos are never uploaded. No account needed.</p></div>
+<div class="card"><h2>Private by design</h2><p>Everything runs on your device. Your photos are never uploaded. No account needed.</p></div>
 <div class="card"><h2>Free</h2><p>No subscription and no limits, paid for by short ads while your photos process.</p></div>
 </div>
 
